@@ -95,7 +95,7 @@ boolean checkTaskDescription(){
 
 String createTaskID(){
     
-     String ID; 
+     String ID ;
     
 
 var firstTwoLetters = TaskName.substring(0,2);
@@ -124,7 +124,7 @@ String printTaskDetails(){
                                       "------------------------------------\n" +
                                       "Developer assigned: " + Developer + "\n" +
                                       "Esimated duration on task: " + Duration +"\n"+
-                                      "Task ID: " + createTaskID() +"\n"+
+                                      "Task ID: " + createTaskID()+"\n"+
                                       "Task status: " + selectedOption
     );
          
