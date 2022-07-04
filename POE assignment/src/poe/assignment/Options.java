@@ -8,9 +8,6 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import javax.swing.JPasswordField;
-import javax.swing.JTextField;
-import javax.swing.WindowConstants;
 
 
 class Options extends JFrame implements ActionListener{
@@ -68,8 +65,7 @@ Options(){
 
 
  @Override
-    //define abstract method actionPerformed() which will be called on button click   
-    public void actionPerformed(ActionEvent ae)     //pass action listener as a parameter  
+   public void actionPerformed(ActionEvent ae)     
     {  
         
         
@@ -80,12 +76,12 @@ Options(){
         }
         
         if(ae.getSource() == showReport){
-            JOptionPane.showMessageDialog(null, "Currently not available, coming soon!");
+            ShowReport newReport = new ShowReport();
+            newReport.ShowReport();
         }
         
         if(ae.getSource() == quit){
-            JOptionPane.showMessageDialog(null, "See you again soon");
-            //frame.setVisible(false);
+            JOptionPane.showMessageDialog(null, "See you again soon");        
             System.exit(EXIT_ON_CLOSE);
         }
         }

@@ -17,7 +17,10 @@ public class AddTask {
     int taskNum;
     int noOfTasks;
     int sumtotalHours = 0;
- 
+    String stringOption;
+    String ID ;
+
+    
      public void addTask(){
        
      String ToDo = "To Do" ;
@@ -30,8 +33,9 @@ public class AddTask {
      option[0] = ToDo;
      option[1] = Done ;
      option[2] = Doing ;
-         
-         
+     
+     
+     
        numberOfTasks =  JOptionPane.showInputDialog(null, "Please enter the amount of tasks you wish to enter"); 
        noOfTasks = Integer.parseInt(numberOfTasks); 
        
@@ -48,7 +52,7 @@ public class AddTask {
                   "Click a button",
                   JOptionPane.QUESTION_MESSAGE, null, option, "default");
           
-          
+          stringOption = selectedOption;
           
           printTaskDetails();
          
@@ -94,9 +98,6 @@ boolean checkTaskDescription(){
 }
 
 String createTaskID(){
-    
-     String ID ;
-    
 
 var firstTwoLetters = TaskName.substring(0,2);
 var lastThreeLetters = Developer.substring(Developer.length() - 3);
@@ -127,7 +128,8 @@ String printTaskDetails(){
                                       "Task ID: " + createTaskID()+"\n"+
                                       "Task status: " + selectedOption
     );
-         
+    
+    ReportStorage r = new ReportStorage(Developer, TaskName, ID, Duration, stringOption);
     
     
     return taskdetails; 
@@ -135,8 +137,6 @@ String printTaskDetails(){
 
  int returnTotalHours(){
    
-    
-    System.out.println("returntotal hours running");
     
     
     int time = Integer.parseInt(Duration);

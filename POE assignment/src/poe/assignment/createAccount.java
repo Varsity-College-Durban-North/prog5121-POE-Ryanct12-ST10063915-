@@ -14,10 +14,7 @@ import javax.swing.JTextField;
 
 class createAccount extends JFrame implements ActionListener{
 
-    
-
  
-          
 //for account page
      
 //labels
@@ -151,8 +148,7 @@ createAccount(){
  
  
     @Override
-    //define abstract method actionPerformed() which will be called on button click   
-    public void actionPerformed(ActionEvent ae)     //pass action listener as a parameter  
+    public void actionPerformed(ActionEvent ae)     
     {  
         UserStorage storage = new UserStorage();
         
@@ -181,13 +177,13 @@ createAccount(){
        }
         
         
-//check whether the credentials are authentic or not  
+ 
         if (firstName.equals(nameText.getText()) && 
                 surname.equals(surnameText.getText()) && 
                 username.equals(createusernameText.getText()) && 
                 Password.equals(createpasswordText.getText()) && 
                 Password.equals(retypepasswordText.getText()) &&
-                ae.getSource() == buttonCreateAccount ) {  //if authentic, navigate user to a new page  
+                ae.getSource() == buttonCreateAccount ) {   
       
             
             

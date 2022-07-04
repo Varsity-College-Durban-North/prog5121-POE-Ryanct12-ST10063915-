@@ -8,10 +8,7 @@ import javax.swing.JOptionPane;
 import static poe.assignment.UserStorage.firstName;
 import static poe.assignment.UserStorage.surname;
 
-
-
-
-//import required classes and packages  
+ 
 public class Login{
     
     public static String username ;
@@ -38,16 +35,12 @@ public class Login{
              
              checker = false ;
         }
-       
-		
-               
+       		           
                 
   return checker;
   }
                 
-                
-             
- 
+                             
  boolean checkPasswordComplexity(String Password1) {
     
         boolean capLetCheck = false;
@@ -56,8 +49,7 @@ public class Login{
 	boolean checkAll = false ;
         boolean lengthpass = false;
     
-       
-        
+               
         String specialCharacters = " !#$%&'()*+,-./:;<=>?@[]^_`{|}";
         String CapitalLetters = "QWERTYUIOPASDFGHJKLZXCVBNM";
         String Numbers = "1234567890" ;

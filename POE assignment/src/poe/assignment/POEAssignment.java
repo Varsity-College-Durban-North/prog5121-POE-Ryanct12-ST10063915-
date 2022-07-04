@@ -2,25 +2,15 @@
 package poe.assignment;
 
 
-
-
-
-
-
-
 public class POEAssignment {
     
  
- 
-
 public static void main(String[] args) {
     
    UserStorage storage = new UserStorage();
    Login login = new Login();
    
-   
-
-      
+        
         login.registerUser();
        
         
@@ -32,15 +22,9 @@ public static void main(String[] args) {
         
        
        
-        //Options option = new Options();
-    
-       
 }
 
-    
-    
 
-   
 
     }
  

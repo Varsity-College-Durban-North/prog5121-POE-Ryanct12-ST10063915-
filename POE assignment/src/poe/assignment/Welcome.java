@@ -12,7 +12,7 @@ public class Welcome extends JFrame implements ActionListener {
     
     Welcome() {
        
-         //constructor  
+          
     JPanel option = new JPanel();
     {  
         
